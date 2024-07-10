@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem de fundo</title>
+    <style>
+        body{
+            background-image: url('imagens/wallpaper001.jpg');
+        }
+
+        div.quadrado{
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: lightgray;
+            width: 300px;
+            height: 300px;
+        }
+
+        div#q1{
+            background-color: aqua;
+        }
+
+        div#q2{
+            background-image: linear-gradient(to bottom, red, pink);            
+        }
+
+        div#q3{
+            background-image: url('imagens/pattern003.png');            
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando caixas e fundos</h1>
+    <div class="quadrado" id="q1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, hic. Reprehenderit animi, veritatis quasi id suscipit qui ipsam iste architecto ipsum delectus, illo quod repudiandae quas, natus sint! Voluptates, unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ratione ab nemo quia, expedita dolore laboriosam necessitatibus eum dolor quas repudiandae cumque nihil, dignissimos assumenda. Placeat inventore reprehenderit fugit modi. 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iste fuga porro vitae iusto cumque repellat facere iure sit minus quaerat sapiente rerum consectetur distinctio error illo maiores, a facilis.   
+        </p>
+    </div>
+    <div class="quadrado" id="q2">
+
+    </div>
+    <div class="quadrado" id="q3">
+
+    </div>
+</body>
+</html>

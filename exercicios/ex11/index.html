@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mideas em HTML 5</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua tela do seu navegador</p>
+    <p>Para usa a tag picture é necessario ordenar a simagens de baixo para cima ou seja da maior para a menor</p>
+    <p>O width sempre vai 'PX'</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="img/p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="img/m.png" type="image/png">
+        <img src="img/g.png" alt="Imagem flexivel">
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audos em HTML5</p>
+    <p>A maneira facil é usando a tag audio, ela segue o mesmo padrão da tag img</p>
+    <audio src="midea/moreira.mp3" controls autoplay></audio>
+
+    <p>A outra maneira e a mais completa é usar a tag audio e colocar os paramentros dentro dela </p>
+    <audio preload="metadata" autoplay controls>
+        <source src="midea/moreira.mp3" type="audio/mpeg">
+    </audio>
+    <h1>Inserindo veideos hospedados localmente</h1>
+    <p>Este video esta hospedado no meu proprio servidor</p>
+    <p>A forma simples de fazer é igual a tag de img </p>
+    <video src="video/20600550-uhd_3840_2160_30fps.mp4" width="500" controls></video>
+    <p>Agora a forma mais complexa e completa</p>
+    <video controls width="500">
+        <source src="video/20600550-uhd_3840_2160_30fps.mp4" type="video/mp4">
+        
+    </video>
+    <h1>Inserindo videos so YouTube</h1>
+    <p>Abrir o YouTube -> clicar no video desejado -> Compartilhar -> Incorporar -> Copiar -> colar no VSCod</p>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=I5EpSRDZC5kx1fJ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
