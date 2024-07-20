@@ -1,0 +1,84 @@
+@charset "UFT-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+    --fontp: "Playwrite BE VLG", cursive;
+    --fontt: "Lobster", sans-serif;
+    --fontpadrao: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;       
+}
+
+header {
+    background: black url('../imagens/euc.jpeg') center center no-repeat fixed;  
+    background-size: cover; 
+    color: white; 
+    height: 250px;
+    text-align: center   
+}
+
+header h1 {
+    padding-top: 30px;
+    font-family: var(--fontt);
+    font-size: 4em;       
+}
+
+header p {
+    padding-bottom: 10px;
+    font-family: var(--fontpadrao);
+    font-variant: small-caps;
+    font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+ }
+
+ a:hover {
+    text-decoration: underline;
+ }
+
+section {
+    height: 35vw;
+    font-size: 2vw;
+}
+
+section.simples {
+    color: brown;    
+}
+
+section.foto {
+    color: white;
+}
+
+section#filha {
+    background: black url('../imagens/filhac.jpeg') top center no-repeat fixed;
+    background-size: cover; 
+}
+
+section#vento {
+    background: black url('../imagens/ventoc.jpeg') top center no-repeat fixed;
+    background-size: cover; 
+}
+
+footer {
+    padding: 14px;
+    text-align: center;
+    font-family: var(--fontp);
+}
+
+footer a {
+    color: rgba(0, 0, 0, 0.772);
+}
