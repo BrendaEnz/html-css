@@ -1,18 +1,21 @@
 @charset "UFT-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
 :root {
-    --fontp: "Playwrite BE VLG", cursive;
+    --fontp:  "Slabo 27px", serif;
     --fontt: "Lobster", sans-serif;
     --fontpadrao: Verdana, Geneva, Tahoma, sans-serif;
+    --fontteste: "Alfa Slab One", serif;
 }
 
 * {
     margin: 0px;
-    padding: 0px;
+    padding: 0px;    
 }
 
 html, body {
@@ -20,17 +23,19 @@ html, body {
 }
 
 header {
-    background: black url('../imagens/euc.jpeg') center center no-repeat fixed;  
+    background: black url('../imagens/euteste.png') right bottom no-repeat fixed;  
     background-size: cover; 
     color: white; 
     height: 250px;
-    text-align: center   
+    text-shadow: 1px 1px 0px black;
+    text-align: center
+     
 }
 
 header h1 {
-    padding-top: 30px;
-    font-family: var(--fontt);
-    font-size: 4em;       
+    padding-top: 50px;
+    font-family: var(--fontteste);
+    font-size: 2.5em;          
 }
 
 header p {
@@ -52,7 +57,13 @@ a {
 
 section {
     height: 35vw;
-    font-size: 2vw;
+    font-size: 2.5vw;
+    font-family: var(--fontp);
+    box-shadow: inset 1px 1px 20px 0px rgba(0, 0, 0, 0.502);
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    text-align: center; /* Centraliza o texto horizontalmente dentro do elemento */
 }
 
 section.simples {
@@ -74,11 +85,13 @@ section#vento {
 }
 
 footer {
-    padding: 14px;
+    margin-top: 2px;
+    padding: 10px;
     text-align: center;
-    font-family: var(--fontp);
+    font-family: var(--fontpadrao);
+    background-color: #000000;
 }
 
-footer a {
-    color: rgba(0, 0, 0, 0.772);
+footer p {
+    color: white
 }
